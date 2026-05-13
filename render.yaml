@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: bulma-practice
+    runtime: static
+    buildCommand: ""
+    publishDir: "."

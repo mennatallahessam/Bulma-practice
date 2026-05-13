@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css">
     <title>First Bulma Example</title>
 </head>
-<body>
+<body >
     <nav class="navbar is-primary">
         <div class="navbar-brand">
             <a class="navbar-item" href="https://bulma.io">
@@ -20,6 +20,7 @@
                 <span></span>
             </div>
         </div>
+
         <div id="navMenuColorprimary-example" class="navbar-menu">
             <div class="navbar-start">
                 <a class="navbar-item" href="https://bulma.io/">
@@ -29,6 +30,7 @@
                     <a class="navbar-link" href="https://bulma.io/documentation/overview/start/">
                         Docs
                     </a>
+
                     <div class="navbar-dropdown">
                         <a class="navbar-item" href="https://bulma.io/documentation/overview/start/">
                             Overview
@@ -36,7 +38,7 @@
                         <a class="navbar-item" href="https://bulma.io/documentation/overview/modifiers/">
                             Modifiers
                         </a>
-                        <a class="navbar-item" href="https://bulma.io/documentation/overview/start/">
+                        <a class="navbar-item" href="https://bulma.io/documentation/columns/basics/">
                             Columns
                         </a>
                         <a class="navbar-item" href="https://bulma.io/documentation/layout/container/">
@@ -55,17 +57,16 @@
                     </div>
                 </div>
             </div>
+
             <div class="navbar-end">
                 <div class="navbar-item">
                     <div class="field is-grouped">
                         <p class="control">
-                            <a class="bd-tw-button button" data-social-network="Twitter" data-social-action="tweet" data-social-target="https://bulma.io" target="_blank" href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&hashtags=bulmaio&url=https://bulma.io&via=jgthms">
+                            <a class="bd-tw-button button" data-social-network="Twitter" data-social-action="tweet" data-social-target="https://bulma.io" target="_blank" href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&amp;hashtags=bulmaio&amp;url=https://bulma.io&amp;via=jgthms">
                                 <span class="icon">
                                     <i class="fab fa-twitter"></i>
                                 </span>
-                                <span>
-                                    Tweet
-                                </span>
+                                <span>Tweet</span>
                             </a>
                         </p>
                         <p class="control">
@@ -88,9 +89,7 @@
                 <div class="column is-one-quarter">
                     <div class="card">
                         <header class="card-header">
-                            <p class="card-header-title">
-                                Component
-                            </p>
+                            <p class="card-header-title">Component</p>
                             <button class="card-header-icon" aria-label="more options">
                                 <span class="icon">
                                     <i class="fas fa-angle-down" aria-hidden="true"></i>
@@ -100,9 +99,7 @@
                         <div class="card-content">
                             <div class="content">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
-                                <a href="#">@bulmaio</a>.
-                                <a href="#">#css</a>
-                                <a href="#">#responsive</a>
+                                <a href="#">@bulmaio</a>. <a href="#">#css</a> <a href="#">#responsive</a>
                                 <br>
                                 <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
                             </div>
@@ -114,33 +111,98 @@
                         </footer>
                     </div>
                 </div>
-                <div class="column">
+
+                <div class="column is-half">
                     <article class="panel is-primary">
-                        <p class="panel-heading">
-                            Primary
+                        <p class="panel-heading">Primary</p>
+                        <p class="panel-tabs">
+                            <a class="is-active">All</a>
+                            <a>Public</a>
+                            <a>Private</a>
+                            <a>Sources</a>
+                            <a>Forks</a>
                         </p>
+                        <div class="panel-block">
+                            <p class="control has-icons-left">
+                                <input class="input is-primary" type="text" placeholder="Search">
+                                <span class="icon is-left">
+                                    <i class="fas fa-search" aria-hidden="true"></i>
+                                </span>
+                            </p>
+                        </div>
+                        <a class="panel-block is-active">
+                            <span class="panel-icon">
+                                <i class="fas fa-book" aria-hidden="true"></i>
+                            </span>
+                            bulma
+                        </a>
+                        <a class="panel-block">
+                            <span class="panel-icon">
+                                <i class="fas fa-book" aria-hidden="true"></i>
+                            </span>
+                            marksheet
+                        </a>
+                        <a class="panel-block">
+                            <span class="panel-icon">
+                                <i class="fas fa-book" aria-hidden="true"></i>
+                            </span>
+                            minireset.css
+                        </a>
+                        <a class="panel-block">
+                            <span class="panel-icon">
+                                <i class="fas fa-book" aria-hidden="true"></i>
+                            </span>
+                            jgthms.github.io
+                        </a>
+                        <a class="panel-block">
+                            <span class="panel-icon">
+                                <i class="fas fa-code-branch" aria-hidden="true"></i>
+                            </span>
+                            daniellowelf
+                        </a>
+                        <a class="panel-block">
+                            <span class="panel-icon">
+                                <i class="fas fa-code-branch" aria-hidden="true"></i>
+                            </span>
+                            mojs
+                        </a>
+                        <label class="panel-block">
+                            <input type="checkbox">
+                            remember me
+                        </label>
+                        <div class="panel-block">
+                            <button class="button is-link is-outlined is-fullwidth">
+                                Reset all filters
+                            </button>
+                        </div>
+                    </article>
+
+                    <nav class="panel">
+                        <p class="panel-heading">Repositories</p>
+                        <div class="panel-block">
+                            <p class="control has-icons-left">
+                                <input class="input" type="text" placeholder="Search">
+                                <span class="icon is-left">
+                                    <i class="fas fa-search" aria-hidden="true"></i>
+                                </span>
+                            </p>
+                        </div>
                         <p class="panel-tabs">
                             <a class="is-active">
-                                <span class="panel-icon">
-                                    <i class="fas fa-book" aria-hidden="true"></i>
-                                </span>
-                                <span>Current</span>
-                            </a>
-                            <a>
-                                <span class="panel-icon">
-                                    <i class="fas fa-book" aria-hidden="true"></i>
+                                <span class="icon is-small">
+                                    <i class="fas fa-calendar-times"></i>
                                 </span>
                                 <span>Completed</span>
                             </a>
                             <a>
-                                <span class="panel-icon">
-                                    <i class="fas fa-book" aria-hidden="true"></i>
+                                <span class="icon is-small">
+                                    <i class="fas fa-calendar-day"></i>
                                 </span>
                                 <span>Upcoming</span>
                             </a>
                             <a>
-                                <span class="panel-icon">
-                                    <i class="fas fa-book" aria-hidden="true"></i>
+                                <span class="icon is-small">
+                                    <i class="fas fa-calendar"></i>
                                 </span>
                                 <span>All</span>
                             </a>
@@ -149,55 +211,142 @@
                             <p class="control has-icons-left">
                                 <input class="input is-primary" type="text" placeholder="New Task">
                                 <span class="icon is-left">
-                                    <i class="fas fa-search" aria-hidden="true"></i>
+                                    <i class="fas fa-calendar-plus" aria-hidden="true"></i>
                                 </span>
                             </p>
                         </div>
                         <a class="panel-block">
-                            <input type="checkbox">
+                            <input type="checkbox" checked />
                             Make Bulma great again
                         </a>
                         <a class="panel-block">
-                            <input type="checkbox">
+                            <input type="checkbox" />
                             Add some more features
                         </a>
-                        <a class="panel-block is-active">
-                            <input type="checkbox" checked>
+                        <a class="panel-block">
+                            <input type="checkbox" />
                             Make a github account
                         </a>
                         <a class="panel-block">
-                            <input type="checkbox">
+                            <input type="checkbox" />
                             Learn how to use github
                         </a>
                         <a class="panel-block">
-                            <input type="checkbox">
+                            <input type="checkbox" />
                             add a .gitignore file
                         </a>
-                    </article>
+                    </nav>
 
-                    <div class="message is-primary">
+                    <article class="message is-primary">
                         <div class="message-header">
                             <p>Make a github account</p>
                             <button class="delete" aria-label="delete"></button>
                         </div>
                         <div class="message-body">
-                            Go to <a href="https://github.com">github.com</a> and create an account. 
-                            That's where you'll be able to share your work with the world.. thats where we will be putting all of our code for this class.
+                            <p>Go to <a href="https://github.com">github.com</a> and create an account.</p>
+                            <p>That's where you'll be able to share your work with the world.. thats where we will be putting all of our code for this class.</p>
+                            <progress class="progress is-success" value="60" max="100">60%</progress>
                         </div>
-                    </div>
+                    </article>
+
+                    <form action="" class="box">
+                        <div class="field">
+                            <label class="label">Name</label>
+                            <div class="control">
+                                <input class="input" type="text" placeholder="Text input">
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label class="label">Username</label>
+                            <div class="control has-icons-left has-icons-right">
+                                <input class="input is-success" type="text" placeholder="Text input" value="bulma">
+                                <span class="icon is-small is-left">
+                                    <i class="fas fa-user"></i>
+                                </span>
+                                <span class="icon is-small is-right">
+                                    <i class="fas fa-check"></i>
+                                </span>
+                            </div>
+                            <p class="help is-success">This username is available</p>
+                        </div>
+
+                        <div class="field">
+                            <label class="label">Email</label>
+                            <div class="control has-icons-left has-icons-right">
+                                <input class="input is-danger" type="email" placeholder="Email input" value="hello@">
+                                <span class="icon is-small is-left">
+                                    <i class="fas fa-envelope"></i>
+                                </span>
+                                <span class="icon is-small is-right">
+                                    <i class="fas fa-exclamation-triangle"></i>
+                                </span>
+                            </div>
+                            <p class="help is-danger">This email is invalid</p>
+                        </div>
+
+                        <div class="field">
+                            <label class="label">Subject</label>
+                            <div class="control">
+                                <div class="select">
+                                    <select>
+                                        <option>Select dropdown</option>
+                                        <option>With options</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label class="label">Message</label>
+                            <div class="control">
+                                <textarea class="textarea" placeholder="Textarea"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <div class="control">
+                                <label class="checkbox">
+                                    <input type="checkbox">
+                                    I agree to the <a href="#">terms and conditions</a>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <div class="control">
+                                <label class="radio">
+                                    <input type="radio" name="question">
+                                    Yes
+                                </label>
+                                <label class="radio">
+                                    <input type="radio" name="question">
+                                    No
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="field is-grouped">
+                            <div class="control">
+                                <button class="button is-link">Submit</button>
+                            </div>
+                            <div class="control">
+                                <button class="button is-link is-light">Cancel</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
+
                 <div class="column is-one-quarter">
+                    <h2 class="title">Table of contents</h2>
+                    <h3 class="subtitle">Intra-page navigation</h3>
                     <aside class="menu">
-                        <p class="menu-label">
-                            General
-                        </p>
+                        <p class="menu-label">General</p>
                         <ul class="menu-list">
                             <li><a>Dashboard</a></li>
                             <li><a>Customers</a></li>
                         </ul>
-                        <p class="menu-label">
-                            Administration
-                        </p>
+                        <p class="menu-label">Administration</p>
                         <ul class="menu-list">
                             <li><a>Team Settings</a></li>
                             <li>
@@ -212,9 +361,7 @@
                             <li><a>Cloud Storage Environment Settings</a></li>
                             <li><a>Authentication</a></li>
                         </ul>
-                        <p class="menu-label">
-                            Transactions
-                        </p>
+                        <p class="menu-label">Transactions</p>
                         <ul class="menu-list">
                             <li><a>Payments</a></li>
                             <li><a>Transfers</a></li>
