@@ -4,13 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>First Bulma Example</title>
-    <!-- Bulma CSS CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-    <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css">
 </head>
 <body>
-    <!-- Navbar -->
     <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
         <div class="container">
             <div class="navbar-brand">
@@ -59,11 +56,9 @@
         </div>
     </nav>
 
-    <!-- Main Content -->
     <section class="section">
         <div class="container">
             <div class="columns">
-                <!-- Left Column -->
                 <div class="column is-one-quarter">
                     <div class="card">
                         <header class="card-header">
@@ -88,9 +83,7 @@
                     </div>
                 </div>
 
-                <!-- Middle Column -->
                 <div class="column is-half">
-                    <!-- Tabs -->
                     <div class="tabs is-boxed">
                         <ul>
                             <li class="is-active">
@@ -120,7 +113,6 @@
                         </ul>
                     </div>
 
-                    <!-- New Task Input -->
                     <div class="field">
                         <div class="control has-icons-left">
                             <input class="input is-primary" type="text" placeholder="New Task">
@@ -130,7 +122,6 @@
                         </div>
                     </div>
 
-                    <!-- Checklist -->
                     <div class="box">
                         <label class="checkbox is-block mb-2">
                             <input type="checkbox" checked>
@@ -158,7 +149,6 @@
                         </label>
                     </div>
 
-                    <!-- Message -->
                     <article class="message is-primary">
                         <div class="message-header">
                             <p>Make a github account</p>
@@ -171,7 +161,6 @@
                         </div>
                     </article>
 
-                    <!-- Form -->
                     <div class="box">
                         <div class="field">
                             <label class="label">Name</label>
@@ -250,7 +239,6 @@
                     </div>
                 </div>
 
-                <!-- Right Column -->
                 <div class="column is-one-quarter">
                     <h2 class="title is-4">Table of contents</h2>
                     <h3 class="subtitle is-6">Intra-page navigation</h3>
@@ -287,7 +275,6 @@
         </div>
     </section>
 
-    <!-- Script for Burger Menu -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
